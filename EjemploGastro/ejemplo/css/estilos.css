@@ -1,0 +1,473 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    outline:none;
+}
+#site
+{
+    width: 1024px;
+    height: 768px;
+    background: #056FA9 url(../imgs/bg-1.jpg) no-repeat;
+    background-size: 2048px 768px;
+    background-position: left center; 
+    overflow: hidden; 
+    position: relative;
+}
+header
+{
+    width: 100%;
+    height: 120px;
+}
+#logo-revitaliza-big
+{
+    width: 209px;
+    position: absolute;
+    left: 50%;
+    margin-left: -79px;
+    top: 65px;
+    opacity: 0;	
+}
+#logo-rimsa-big
+{
+    width: 102px;
+    position: absolute;
+    right: 23px;
+    top: 25px;
+}
+#texto
+{
+    width: 578px;
+    position: absolute;
+    left: 50%;
+    margin-left: -257px;
+    top: 233px;
+    opacity: 0;
+}
+#man
+{
+    position: absolute;
+    left: 5PX;
+    bottom: -5PX;
+    opacity: 0;
+}
+
+div#rueda {
+    background-image: url(../imgs/rueda-chica.png);
+    height: 218px;
+    width: 218px;
+    background-size: cover;
+    position: absolute;
+    top: 464px;
+    left: 729px;
+    border-radius: 150px;
+    -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    transition: all .5s;
+    /* transform: rotate(248deg); */
+    cursor: pointer;
+}
+
+div#holder-rueda 
+{
+    width: 994px;  height: 994px;  position: absolute;  top: -106px;  
+    left: 1031px;
+    -webkit-box-shadow: 0px 0 20px 4px rgba(0, 0, 0, 0.5);  
+    box-shadow: 0px 0 20px 4px rgba(0, 0, 0, 0.5);  
+    border-radius: 1020px;
+    overflow: hidden;
+    background: white;
+}
+
+area
+{
+    outline:none;
+}
+
+img#rueda-numero 
+{
+    position: absolute;
+    top: 323px;
+    left: 1400px;
+    width: 141px;
+    z-index: 2;
+    padding-right: 20px;
+    padding-top: 32px;
+    padding-bottom: 10px;
+    opacity: 0;
+}
+#texto-2
+{
+    width: 464px;
+    position: absolute;
+    left: 47px;
+    top: 158px;
+    opacity: 0;
+}
+#logos-all
+{
+    width: 402px;
+    margin-left: 68px;
+    margin-top: 24px;
+}
+#header
+{
+    margin-top: -150px;
+    opacity: 0;
+}
+.oculto
+{
+    display: none;
+}
+#controles-div
+{
+    width: 70px;
+    height: 300px;
+    position: absolute;
+    bottom: 10px;
+    left: -130px;
+}
+.buttons-controles
+{
+    width: 62px;
+    float: left;
+    margin-bottom: 10px;
+    position: relative!important;
+}
+
+@-webkit-keyframes pulse {
+    25%   {-webkit-transform:scale(1.1); } 
+    50% {-webkit-transform:scale(1);}
+    75%   {-webkit-transform:scale(1.3);}
+    100%   {-webkit-transform:scale(1);}
+}
+
+@keyframes pulse {
+    25%   {transform:scale(1.1);}
+    50% {transform:scale(1);}
+    75%   {transform:scale(1.3);}
+    100%   {transform:scale(1);}
+}
+
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+
+.sub-menu {
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+
+
+.btn-video, .btn-back {
+    position: absolute;
+}
+div#btn-cerrar {
+    position: absolute;
+    background: url(../imgs/btnCerrar.png);
+    background-size: cover;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    background-position: center;
+}
+
+/********Skin*************/
+
+div#holder-skin {
+    background: url(../imgs/submenuSkin.jpg);
+}
+#holder-skin > div#btn1 {
+    width: 77px;
+    height: 76px;
+    top: 22px;
+    left: 770px;
+}
+#holder-skin > div#btn2 {
+    top: 5px;  left: 18px;  height: 173px;  width: 422px;
+}
+#holder-skin > div#btn3 {
+    top: 137px;
+    left: 559px;
+    width: 156px;
+    height: 55px;
+}
+#holder-skin > div#btn4 {
+    top: 251px;
+    left: 563px;
+    width: 147px;
+    height: 50px;
+}
+#holder-skin > div#btn5 {
+    top: 259px;
+    left: 63px;
+    width: 166px;
+    height: 50px;
+}
+#holder-skin > div#btn6 {
+    top: 414px;
+    left: 66px;
+    width: 183px;
+    height: 75px;
+}
+
+/********Polibetic*************/
+
+div#holder-polibetic {
+    background: url(../imgs/submenuPolibetic.jpg);
+}
+#holder-polibetic > div#btn1 {
+    width: 77px;
+    height: 76px;
+    top: 22px;
+    left: 770px;
+}
+#holder-polibetic > div#btn2 {
+    top: 5px;  left: 18px;  height: 173px;  width: 422px;
+}
+#holder-polibetic > div#btn3 {
+    top: 267px;
+    left: 30px;
+    width: 238px;
+    height: 126px;
+}
+#holder-polibetic > div#btn4 {
+    top: 123px;
+    left: 677px;
+    width: 238px;
+    height: 77px;
+}
+#holder-polibetic > div#btn5 {
+    top: 404px;
+    left: 681px;
+    width: 196px;
+    height: 53px;
+}
+#holder-polibetic > div#btn6 {
+    top: 596px;
+    left: 33px;
+    width: 260px;
+    height: 75px;
+}
+
+/********Policardic*************/
+
+div#holder-policardic {
+    background: url(../imgs/submenuPolicardic.jpg);
+}
+#holder-policardic > div#btn1 {
+    width: 77px;
+    height: 76px;
+    top: 22px;
+    left: 770px;
+}
+#holder-policardic > div#btn2 {
+    top: 5px;  left: 18px;  height: 173px;  width: 422px;
+}
+#holder-policardic > div#btn3 {
+    top: 379px;
+    left: 90px;
+    width: 174px;
+    height: 108px;
+}
+#holder-policardic > div#btn4 {
+    top: 97px;
+    left: 567px;
+    width: 192px;
+    height: 46px;
+}
+#holder-policardic > div#btn5 {
+    top: 368px;
+    left: 519px;
+    width: 283px;
+    height: 79px;
+}
+
+/********Nemocit*************/
+
+div#holder-nemocit{
+    background: url(../imgs/submenuNemocit.jpg);
+}
+#holder-nemocit > div#btn1 {
+    width: 77px;
+    height: 76px;
+    top: 22px;
+    left: 770px;
+}
+#holder-nemocit > div#btn2 {
+    top: 5px;  left: 18px;  height: 173px;  width: 422px;
+}
+#holder-nemocit > div#btn3 {
+    top: 419px;
+    left: 90px;
+    width: 170px;
+    height: 62px;
+}
+#holder-nemocit > div#btn4 {
+    top: 217px;
+    left: 687px;
+    width: 170px;
+    height: 76px;
+}
+
+/********Vitalen*************/
+
+div#holder-vitalen{
+    background: url(../imgs/submenuVitalen.jpg);
+}
+#holder-vitalen > div#btn1 {
+    width: 77px;
+    height: 76px;
+    top: 22px;
+    left: 770px;
+}
+#holder-vitalen > div#btn2 {
+    top: 5px;  left: 18px;  height: 173px;  width: 422px;
+}
+#holder-vitalen > div#btn3 {
+    top: 283px;
+    left: 39px;
+    width: 488px;
+    height: 122px;
+}
+#holder-vitalen > div#btn4 {
+    top: 500px;
+    left: 631px;
+    width: 199px;
+    height: 74px;
+}
+
+/********Hair*************/
+
+div#holder-hair{
+    background: url(../imgs/submenuHair.jpg);
+}
+#holder-hair > div#btn1 {
+    width: 77px;
+    height: 76px;
+    top: 22px;
+    left: 770px;
+}
+#holder-hair > div#btn2 {
+    top: 5px;  left: 18px;  height: 173px;  width: 422px;
+}
+#holder-hair > div#btn3 {
+    top: 276px;
+    left: 559px;
+    width: 268px;
+    height: 57px;
+}
+#holder-hair > div#btn4 {
+    top: 450px;
+    left: 124px;
+    width: 75px;
+    height: 55px;
+}
+#holder-hair > div#btn5 {
+    top: 124px;
+    left: 561px;
+    width: 175px;
+    height: 74px;
+}
+#holder-hair > div#btn6 {
+    top: 309px;
+    left: 146px;
+    width: 140px;
+    height: 44px;
+}
+
+
+
+
+/********gex************/
+
+div#holder-gex {
+    background: url(../imgs/submenuGex.jpg);
+}
+#holder-gex > div#btn1 {
+    width: 77px;
+    height: 76px;
+    top: 22px;
+    left: 770px;
+}
+#holder-gex > div#btn2 {
+    top: 5px;  left: 18px;  height: 173px;  
+    width: 382px;
+}
+#holder-gex > div#btn3 {
+    top: 329px;
+    left: 654px;
+    width: 200px;
+    height: 40px;
+}
+#holder-gex > div#btn4 {
+    top: 303px;
+    left: 74px;
+    width: 221px;
+    height: 51px;
+}
+#holder-gex > div#btn5 {
+    top: 546px;
+    left: 75px;
+    width: 198px;
+    height: 48px;
+}
+#holder-gex > div#btn6 {
+    top: 415px;
+    left: 64px;
+    width: 185px;
+    height: 73px;
+}
+
+/********pladuet************/
+
+div#holder-pladuet {
+    background: url(../imgs/submenuPlaudet.jpg);
+}
+#holder-pladuet > div#btn1 {
+    width: 77px;
+    height: 76px;
+    top: 22px;
+    left: 770px;
+}
+#holder-pladuet > div#btn2 {
+    top: 5px;  left: 18px;  height: 173px;  
+    width: 399px;
+}
+#holder-pladuet > div#btn3 {
+    top: 266px;
+    left: 30px;
+    width: 207px;
+    height: 94px;
+}
+#holder-pladuet > div#btn4 {
+    top: 178px;
+    left: 694px;
+    width: 207px;
+    height: 45px;
+}
+#holder-pladuet > div#btn5 {
+    top: 259px;
+    left: 64px;
+    width: 166px;
+    height: 46px;
+}
+#holder-pladuet > div#btn6 {
+    top: 415px;
+    left: 64px;
+    width: 185px;
+    height: 73px;
+}
+

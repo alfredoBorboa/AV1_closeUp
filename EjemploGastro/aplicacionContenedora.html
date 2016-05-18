@@ -1,0 +1,29 @@
+<html>
+<body>
+	<input type="button" onclick="requestSessionStats();" value="Request Stats"/>
+	<br/><br/>
+	<iframe id="ifrm" name="ifrmname" src="ejemplo/index.html" height="500px" width="100%"></iframe>
+	<br/><br/>
+	log:
+	<div id="logContainer" style="background-color:whitesmoke;height:200px;width:100%;overflow:auto;font-family: Arial;font-size: 12px;border-radius: 10;border-color: black;border-style: dashed;border-width:1px;"></div>
+
+	<script>
+
+		window.addEventListener('message', onRespuesta,false);
+		function onRespuesta(e){
+			doLog('sessionStats: ' + e.data);
+		}
+
+		function requestSessionStats(){
+			document.getElementById('ifrm').contentWindow.postMessage('getStat', '*');
+			doLog('evento: requestSessionStatsPutin');
+		}
+
+		function doLog(message){
+			document.getElementById('logContainer').innerHTML += '[' + new Date().toLocaleString() + '] ' +  message + '<br/>';
+		}
+	</script>
+
+
+</body>
+</html>
